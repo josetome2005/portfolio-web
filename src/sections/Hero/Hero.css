@@ -1,6 +1,7 @@
 .hero{
     padding: 6rem 0 4rem 0;
     position: relative;
+    min-height: 100vh;
 }
 
 .background_hero__opacity{
@@ -17,4 +18,130 @@
     inset: 0;
     position: absolute;
     background: radial-gradient(ellipse at top, oklch(62% .22 260 / .25), transparent 60%);
+}
+
+.hero__img_wrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.hero__img_background {
+    width: 120%;
+    height: 110%;
+
+    mix-blend-mode: screen;
+    opacity: 0.4;
+
+    object-fit: cover;
+    object-position: bottom;
+
+    position: absolute;
+    right: 0;
+    top: -5%;
+
+    display: block;
+}
+
+/*----------------------------------------------------------*/
+
+.hero__content{
+    position: relative;
+    z-index: 10;
+    padding: 0 1.5rem;
+}
+
+.hero__tag{   
+    display: inline-flex;
+    
+    color: #8b9aab;
+    
+    font-size: 0.75rem;
+    
+    padding: 0.325rem 1rem;
+    margin-bottom: 2rem;
+
+    border-radius: 9999px;
+    
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero__tag p{
+    font-family: "JBMono";
+    animation: typing 1.5s steps(22),
+    blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 2px solid;
+    overflow: hidden;
+}
+
+.hero__tag div{
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background-color: var(--main-color);
+    animation: twinkle 2s ease-in infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes twinkle {
+    0%{
+        transform: scale(1);
+        background-color: var(--main-color);
+    }
+    50%{
+        transform: scale(1.2);
+        background-color: #3f79f5;
+    }
+    100%{
+        transform: scale(1);
+        background-color: var(--main-color);
+    }
+}
+
+/*----------------------------------------------------------*/
+
+.hero__title{
+    font-size: 6rem;
+    font-family: "Space_Grotesk";
+    line-height: 0.95;
+    color: #f0f6fc;
+}
+
+.hero__title .name{
+    background: linear-gradient(135deg, #e5f0fc, color(xyz 0.544 0.586 1.163) 50%, color(xyz 0.447 0.472 1.211) 75%, color(xyz 0.407 0.421 1.232) 87.5%, color(xyz 0.388 0.396 1.242), color(xyz 0.371 0.373 1.252));
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: block;
+}
+
+.hero__title .role{
+    display: block;
+    color: #8b9aab;
+}
+
+.hero__subtitle{
+    
 }
