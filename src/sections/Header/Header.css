@@ -1,0 +1,59 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header nav{
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-------------------------------------------*/
+
+.header__icon__container{
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-family: "Space Grotesk";
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 0.75rem;
+}
+
+/*-------------------------------------------*/
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+ul li a{
+    display: flex;
+    color: #8b9aab;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+/*---------------------------------------------*/
+
+.header__contact__button{
+    box-shadow: 0 0 60px -10px oklch(62% .22 260 / .5);
+    color: #fcf7f8;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.75rem;
+    background-color: var(--main-color);
+    padding: 0.5rem 1rem;
+}

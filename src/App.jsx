@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Comienzo PortFolio Web</h1>
+      <Header />
       <Hero />
     </>
   )
