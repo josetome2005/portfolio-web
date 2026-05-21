@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  background-color: var(--color-background);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "JBMono";
+  src: url("../public/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../public/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+:root{
+  --main-color: #2563eb;
+  --background: oklch(16% .02 260);
+  --color-background: var(--background);
+}
+
