@@ -1,15 +1,22 @@
-header{
+.header{
     position: fixed;
     top: 0;
     width: 100%;
     overflow-x: hidden;
+    z-index: 10000;
+    transition: 0.3s all;
 }
 
-header nav{
+.header nav{
     padding: 1rem var(--section-lateral-padding);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header.scrolled{
+    background-color: #0f1621b3;
+    border: 1px solid oklch(100% 0 0/.1);
 }
 
 /*-------------------------------------------*/

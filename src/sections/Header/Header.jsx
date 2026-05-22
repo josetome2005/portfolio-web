@@ -1,10 +1,21 @@
 import "./Header.css"
+import { useEffect, useState } from "react"
+
 
 export function Header(){
 
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handler = () => setScrolled(window.scrollY > 0);
+        window.addEventListener('scroll', handler)
+
+        return () => window.removeEventListener("scroll", handler);
+    }, [])
+
     return(
 
-        <header>
+        <header className={scrolled ? "header scrolled" : "header"}>
             <nav>
                 <div className="header__icon__container">
                     <span className="material-symbols-outlined">
