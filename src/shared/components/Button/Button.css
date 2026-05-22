@@ -1,0 +1,60 @@
+.button_component{
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.75rem;
+    gap: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ffffff14;
+    transition: 0.3s all ease-in-out;
+}
+
+/*----------- Variaciones */
+
+.button_component--regular {
+    box-shadow: 0 0 60px -10px oklch(62% .22 260 / .5);
+    background-color: var(--main-color);
+    color: #fcf7f8;
+}
+
+.button_component--glass {
+    background-color: #ffffff0a;
+    color: #fcf7f8;
+    transition: 0.3s ease-in;
+}
+
+.button_component--glass:hover{
+    background-color: #ffffff1a;
+}
+
+/* ---------- Iconos */
+
+.button_component span{
+    font-size: 0.875rem;
+    font-weight: 500;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+/*----------- Variacion de posicionamiento de ícono */
+
+.button_component.left {
+    flex-direction: row-reverse;
+}
+
+/*--------- Animación Básica */
+
+.button_component.animation:hover span{
+    transform: translateX(5px);
+    transition: 0.3s all ease-in-out;
+}
+
+.button_component.animation:hover {
+    opacity: 0.9;
+    transition: 0.3s all ease-in-out;
+}
+
+

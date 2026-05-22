@@ -43,8 +43,22 @@
     position: absolute;
     right: 0;
     top: -5%;
-
+    
+    z-index: 10;
     display: block;
+}
+
+.hero__grid_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #00000009;
+    background-image:
+        linear-gradient(#ffffff06 1px, #0000 1px),
+        linear-gradient(90deg, #ffffff06 1px, #0000 1px);
+    background-size: 56px 56px;
+    
 }
 
 /*----------------------------------------------------------*/
@@ -52,8 +66,11 @@
 .hero__content{
     position: relative;
     z-index: 10;
-    padding: 0 1.5rem;
+    padding: 0 var(--section-lateral-padding);
+
 }
+
+/*---------------------*/
 
 .hero__tag{   
     display: inline-flex;
@@ -121,7 +138,7 @@
 /*----------------------------------------------------------*/
 
 .hero__title{
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: "Space_Grotesk";
     line-height: 0.95;
     color: #f0f6fc;
@@ -143,5 +160,45 @@
 }
 
 .hero__subtitle{
-    
+    font-size: 1.125rem;
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    color: #b6c2cf;
+    font-weight: 300;
+}
+
+.hero__buttons_container{
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/*--------------------------------------*/
+
+.hero__extra_data{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    color: #8b9aab;
+    gap: 1.25rem;
+}
+
+.hero__extra_data a{
+    display: flex;
+    align-items: center;
+    color: #8b9aab;
+    transition: 0.3s ease-in-out;
+}
+
+.hero__extra_data a:hover{
+    color: #f0f6fc;
+}
+
+.hero__location{
+    font-family: "JBMono";
+    font-size: 0.75rem;
+    line-height: 1.625;
 }

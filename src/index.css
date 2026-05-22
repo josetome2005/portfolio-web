@@ -28,24 +28,51 @@ body{
   border: 1px solid oklch(100% 0 0 / .08);
 }
 
+/* ///////////////////////////////// FUENTE //////////////////////*/
+
 @font-face {
   font-family: "Inter";
-  src: url("../public/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+  src: url("/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
 }
 
 @font-face {
   font-family: "JBMono";
-  src: url("../public/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf");
+  src: url("/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("../public/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+  src: url("/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
 }
+
+/* ///////////////////////////////// VARIABLES //////////////////////*/
 
 :root{
-  --main-color: #2563eb;
+  --main-color: #277dff;
   --background: oklch(16% .02 260);
   --color-background: var(--background);
+
+  --s-section-lateral-padding: 0.5rem;
+  --m-section-lateral-padding: 1.5rem;
+  --l-section-lateral-padding: 5rem;
+
+  --section-lateral-padding: var(--l-section-lateral-padding);
 }
 
+/* ///////////////////////////////// UTILS //////////////////////*/
+
+.section__subtitle{
+  font-family: "JBMono";
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--main-color);
+  letter-spacing: 0.6px;
+}
+
+.section__title{
+
+}
+
+.section__text{
+
+}
