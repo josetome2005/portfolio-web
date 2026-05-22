@@ -1,0 +1,15 @@
+.aboutMe{
+    width: 100%;
+    background-color: var(--background);
+    padding: 8rem var(--section-lateral-padding);
+}
+
+.aboutMe .cards__container{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.aboutMe .cards__container > *{
+    flex: 1 1 calc(33% - 1.5rem);
+}

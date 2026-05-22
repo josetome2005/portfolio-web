@@ -7,7 +7,7 @@ export function Header(){
         <header>
             <nav>
                 <div className="header__icon__container">
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         code_xml
                     </span>
                 </div>

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", system-ui, sans-serif;
 }
 
 a {
@@ -21,11 +20,6 @@ body{
   background-color: var(--color-background);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-}
-
-.glass{
-  background: #ffffff0a;
-  border: 1px solid oklch(100% 0 0 / .08);
 }
 
 /* ///////////////////////////////// FUENTE //////////////////////*/
@@ -57,9 +51,16 @@ body{
   --l-section-lateral-padding: 5rem;
 
   --section-lateral-padding: var(--l-section-lateral-padding);
+
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 /* ///////////////////////////////// UTILS //////////////////////*/
+
+.glass {
+  background: #ffffff0a;
+  border: 1px solid oklch(100% 0 0 / .08);
+}
 
 .section__subtitle{
   font-family: "JBMono";
@@ -70,9 +71,24 @@ body{
 }
 
 .section__title{
-
+  font-family: "Space Grotesk";
+  background: linear-gradient(135deg, #e5f0fc, color(xyz 0.544 0.586 1.163) 50%, color(xyz 0.447 0.472 1.211) 75%, color(xyz 0.407 0.421 1.232) 87.5%, color(xyz 0.388 0.396 1.242), color(xyz 0.371 0.373 1.252));
+  background-clip: text;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 1rem;
+  letter-spacing: -1.2px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  max-width: 36rem;
 }
 
 .section__text{
-
+  color: #8b9aab;
+  line-height: 1.625;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+  max-width: 42rem;
 }

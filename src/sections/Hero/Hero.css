@@ -139,7 +139,7 @@
 
 .hero__title{
     font-size: 5rem;
-    font-family: "Space_Grotesk";
+    font-family: "Space Grotesk";
     line-height: 0.95;
     color: #f0f6fc;
 }
@@ -148,7 +148,6 @@
     background: linear-gradient(135deg, #e5f0fc, color(xyz 0.544 0.586 1.163) 50%, color(xyz 0.447 0.472 1.211) 75%, color(xyz 0.407 0.421 1.232) 87.5%, color(xyz 0.388 0.396 1.242), color(xyz 0.371 0.373 1.252));
     background-clip: text;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     display: block;
