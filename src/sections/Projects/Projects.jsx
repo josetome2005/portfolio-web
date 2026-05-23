@@ -60,7 +60,7 @@ export function Projects(){
 
         <section className="projects">
 
-            <p className="section__subtitle">02 — Stack tecnológico</p>
+            <p className="section__subtitle">03 — Stack tecnológico</p>
             <h2 className="section__title">Herramientas con las que construyo.</h2>
             
             <div className="projects__container">

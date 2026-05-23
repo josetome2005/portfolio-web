@@ -1,6 +1,6 @@
 import "./Button.css"
 
-export function Button({text, icon, iconPosition = "right", useRowAnimation = false, type, to}){
+export function Button({text, icon, iconPosition = "right", useRowAnimation = false, type, to = "", onClick = () => {}}){
 
     const classNameType = type 
         ? `button_component button_component--${type}` 
@@ -10,6 +10,13 @@ export function Button({text, icon, iconPosition = "right", useRowAnimation = fa
         ? "animation"
         : ""
 
+    const handleClick = (e) => {
+
+        e.preventDefault();
+
+        onClick();
+
+    }
 
     const className = classNameType + " " + classNameAnimation + " " + iconPosition;
 
@@ -17,7 +24,8 @@ export function Button({text, icon, iconPosition = "right", useRowAnimation = fa
 
         <a
             className={className}
-            href={to}>
+            href={to}
+            onClick={handleClick}>
             
             {text}
 

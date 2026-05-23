@@ -1,5 +1,6 @@
 import './App.css'
 import { AboutMe } from './sections/AboutMe/AboutMe'
+import { Contact } from './sections/Contact/Contact'
 import { Header } from './sections/Header/Header'
 import { Hero } from './sections/Hero/Hero'
 import { Projects } from './sections/Projects/Projects'
@@ -15,6 +16,7 @@ function App() {
       <AboutMe />
       <Stack />
       <Projects />
+      <Contact />
     </>
   )
 }

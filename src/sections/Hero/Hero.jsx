@@ -1,4 +1,5 @@
 import { Button } from "../../shared/components/Button/Button"
+import { WritingTag } from "../../shared/components/WritingTag/WritingTag"
 import "./Hero.css"
 
 export function Hero(){
@@ -16,10 +17,9 @@ export function Hero(){
             <div className="hero__grid_bg"></div>
             
             <div className="hero__content">
-                <div className="hero__tag glass">
-                    <div></div>
-                    <p>Disponible para nuevos proyectos</p>
-                </div>
+                
+                <WritingTag 
+                    text={"Disponible para nuevos proyectos"}/>
 
                 <h1 className="hero__title">
                     <span className="name">José I. Tomé.</span>
