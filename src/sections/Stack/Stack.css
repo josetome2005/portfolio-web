@@ -1,0 +1,19 @@
+.stack{
+    width: 100%;
+    padding: 8rem var(--section-lateral-padding);
+    background: #080D16;
+    background: linear-gradient(0deg, rgba(8, 13, 22, 1) 0%, rgba(19, 30, 46, 1) 50%, rgba(8, 13, 22, 1) 100%);
+}
+
+
+.stack__container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.stack__container > *{
+    max-width: calc(50% - 0.5rem);
+    flex: 1 1 calc(50% - 0.5rem);
+}

@@ -1,0 +1,80 @@
+.stack_card{
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    transition: 0.3s ease-in-out;
+}
+
+.stack_card:hover {
+    background-color: #ffffff1a;
+}
+
+/*-----------------------------------------------------*/
+
+.stack_card__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.stack_card__header p{
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    color: #8b9aab;
+    letter-spacing: 0.75px;
+    font-family: "JBMono";
+}
+
+
+.stack_card__header h3{
+    font-family: "Space Grotesk";
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #f0f6fc;
+}
+
+/*-----------------------------------------------------*/
+
+.stack__items_container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.stack_item{
+    min-width: 18%;
+
+    background-color: #ffffff0a;
+    
+    padding: 6px 12px;
+    
+    border: 1px solid #ffffff1a;
+    
+    border-radius: 9999px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    transition: 0.3s all ease-in-out;
+
+    cursor: default;
+}
+
+.stack_item:hover{
+    background-color: #277dff1a;
+    border-color: #277dff80;
+    transform: translateY(-3px);
+}
+
+.stack_item img{
+    width: 14px;
+}
+
+
+.stack_card span{
+    font-size: 0.75rem;
+    color: #f0f6fc;
+    letter-spacing: 0.5px;
+}
