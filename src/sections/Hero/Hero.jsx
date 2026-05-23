@@ -1,8 +1,18 @@
 import { Button } from "../../shared/components/Button/Button"
 import { WritingTag } from "../../shared/components/WritingTag/WritingTag"
 import "./Hero.css"
+import { useEffect, useState } from "react";
 
 export function Hero(){
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handler = () => setScrolled(window.scrollY > 0);
+        window.addEventListener('scroll', handler)
+
+        return () => window.removeEventListener("scroll", handler);
+    }, [])
 
     return(
 
@@ -14,7 +24,7 @@ export function Hero(){
                 <img src="/imgs/hero-bg.jpg" alt="" className="hero__img_background" />
             </div>
 
-            <div className="hero__grid_bg"></div>
+            <div className="hero__grid_bg" style={{backgroundSize: scrolled ? "90px 90px" : "56px 56px"}}></div>
             
             <div className="hero__content">
                 

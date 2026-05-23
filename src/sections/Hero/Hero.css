@@ -46,7 +46,11 @@
     
     z-index: 10;
     display: block;
+
+    mask-image: linear-gradient(to right, transparent 0%, black 35%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
 }
+
 
 .hero__grid_bg{
     width: 100%;
@@ -58,7 +62,10 @@
         linear-gradient(#ffffff06 1px, #0000 1px),
         linear-gradient(90deg, #ffffff06 1px, #0000 1px);
     background-size: 56px 56px;
+    transition: 0.3s all ease;
+
     
+
 }
 
 /*----------------------------------------------------------*/
