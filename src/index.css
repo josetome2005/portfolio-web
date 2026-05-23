@@ -43,7 +43,7 @@ body{
 
 :root{
   --main-color: #277dff;
-  --background: oklch(16% .02 260);
+  --background: #080d16;
   --color-background: var(--background);
 
   --s-section-lateral-padding: 0.5rem;

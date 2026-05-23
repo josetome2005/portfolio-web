@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+    padding: 2.25rem var(--section-lateral-padding);
+    border: 1px solid #ffffff14;
+    background: #080D16;
+    background: linear-gradient(136deg, rgba(8, 13, 22, 1) 0%, rgba(18, 34, 56, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer > *{
+    width: 30%;
+}
+
+.footer .logo{
+    font-size: 0.75rem;
+    color: #fcf7f8;
+}
+
+.footer .watermark, .footer .message{
+    font-size: 0.75rem;
+    color: #8b9aab;
+    font-family: "JBMono";
+}
+
+.footer .watermark{
+    text-align: center;
+}
+
+.footer .message{
+    text-align: right;
+}
