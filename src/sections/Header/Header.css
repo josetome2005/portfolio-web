@@ -19,6 +19,10 @@
     border: 1px solid oklch(100% 0 0/.1);
 }
 
+.header .button__menu{
+    display: none;
+}
+
 /*-------------------------------------------*/
 
 .header__icon__container{
@@ -63,4 +67,91 @@ ul li a{
     border-radius: 0.75rem;
     background-color: var(--main-color);
     padding: 0.5rem 1rem;
+}
+
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 70px;
+    }
+
+    .header.open{
+        background: #0f1621cb;
+        border-bottom: none;
+    }
+
+    .header .button__menu{
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .header nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .header .menu{
+        font-size: 2rem;
+        color: #fcf7f8;
+    }
+
+
+    .header .buttons__container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__contact__button{
+        display: none;
+    }
+
+    .nav__list {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        background: #0f1621cb;
+        backdrop-filter: blur(3px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    
+        transform: translateY(-110%);
+        opacity: 0;
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                    opacity 0.35s ease;
+        
+        pointer-events: none; /* o tape clicks cuando está cerrado  */
+        z-index: 10001;
+    }
+    
+    .nav__list.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+    .nav__list li {
+        opacity: 0;
+        transform: translateY(-8px);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    
+    .nav__list.open li:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.05s; }
+    .nav__list.open li:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
+    .nav__list.open li:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+    .nav__list.open li:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
+    
 }
