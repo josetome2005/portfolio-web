@@ -58,7 +58,7 @@ export function Projects(){
 
     return(
 
-        <section className="projects">
+        <section className="projects" id="projects">
 
             <p className="section__subtitle">03 — Trabajos Recientes</p>
             <h2 className="section__title">Trabajos recientes.</h2>

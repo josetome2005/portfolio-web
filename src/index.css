@@ -16,6 +16,10 @@ img{
   width: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--color-background);
   overflow-x: hidden;

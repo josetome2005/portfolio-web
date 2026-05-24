@@ -106,7 +106,7 @@ export function Stack(){
 
     return(
 
-        <section className="stack">
+        <section className="stack" id="stack">
 
             <p className="section__subtitle">02 — Stack tecnológico</p>
             <h2 className="section__title">Herramientas con las que construyo.</h2>

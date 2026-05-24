@@ -5,7 +5,7 @@ export function AboutMe(){
 
     return(
 
-        <section className="aboutMe">
+        <section id="aboutMe" className="aboutMe">
 
             <p className="section__subtitle">01 - Sobre Mí</p>
             <h2 className="section__title">Construyo experiencias web que importan</h2>

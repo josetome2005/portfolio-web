@@ -16,7 +16,7 @@ export function Hero(){
 
     return(
 
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="background_hero__opacity"></div>
             <div className="background_hero__gradient"></div>
 
@@ -44,14 +44,14 @@ export function Hero(){
                         icon={"arrow_forward"}
                         useRowAnimation={true}
                         type={"regular"}
-                        to={""}/>
+                        to={"#projects"}/>
 
                     <Button
                         text={"Contactarme"}
                         icon={"local_fire_department"}
                         useRowAnimation={false}
                         type={"glass"}
-                        to={""}
+                        to={"#contact"}
                         iconPosition={"left"} />
                 </div>
                 

@@ -17,21 +17,20 @@ export function Header(){
 
         <header className={scrolled ? "header scrolled" : "header"}>
             <nav>
-                <div className="header__icon__container">
+                <a href="#hero" className="header__icon__container">
                     <span className="material-symbols-outlined">
                         code_xml
                     </span>
-                </div>
+                </a>
             
                 <ul>
-                    <li><a href="">Sobre Mí</a></li>
-                    <li><a href="">Stack</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li><a href="">Experiencia</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#aboutMe">Sobre Mí</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
 
-                <a href="" className="header__contact__button">Hablemos</a>
+                <a href="#contact" className="header__contact__button">Hablemos</a>
             </nav>
 
         </header>

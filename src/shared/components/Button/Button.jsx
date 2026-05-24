@@ -11,8 +11,11 @@ export function Button({text, icon, iconPosition = "right", useRowAnimation = fa
         : ""
 
     const handleClick = (e) => {
+        
+        if(!to){
+            e.preventDefault();
+        }
 
-        e.preventDefault();
 
         onClick();
 
