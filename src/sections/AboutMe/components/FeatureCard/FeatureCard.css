@@ -32,3 +32,17 @@
     font-size: 0.75rem;
     text-align: justify;
 }
+
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+   
+    .feature_card h3{
+        font-size: 1.125rem;
+    }
+    
+    .feature_card p{
+        font-size: 0.875rem;
+    }
+
+}

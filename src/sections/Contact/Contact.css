@@ -73,3 +73,32 @@
     border-color: #277dff80;
 }
 
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    .contact{
+        padding: 6rem var(--section-lateral-padding);
+    }
+    
+    .contact .section__title{
+        font-size: 3.5rem;
+    }
+        
+    /*----------------------------------------*/
+    
+    .contact .email{
+        font-size: 1.5rem;
+    }
+    
+    .whatsapp__container{
+        margin-top: 2rem;
+    }
+    
+    .whatsapp__link{
+        width: 42px;
+        height: 42px;
+    }
+    
+
+}

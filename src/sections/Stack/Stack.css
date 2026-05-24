@@ -17,3 +17,22 @@
     max-width: calc(50% - 0.5rem);
     flex: 1 1 calc(50% - 0.5rem);
 }
+
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    .stack{
+        padding: 6rem var(--section-lateral-padding);
+    }
+    
+    
+    .stack__container{
+        flex-direction: column;
+    }
+    
+    .stack__container > *{
+        max-width: 100%;
+    }
+
+}

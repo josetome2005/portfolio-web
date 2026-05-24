@@ -31,3 +31,34 @@
 .footer .message{
     text-align: right;
 }
+
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer > *{
+        width: 100%;
+    }
+    
+    .footer .logo{
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    
+    .footer .watermark, .footer .message{
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    
+    .footer .message{
+        font-size: 0.75rem;
+    }
+    
+
+}

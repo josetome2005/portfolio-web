@@ -143,3 +143,44 @@
     font-size: 0.75rem;
     line-height: 1.625;
 }
+
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    
+    .background_hero__opacity{
+        width: 100%;
+        height: 100vh;
+        opacity: 0.4;
+        inset: 0;
+        position: absolute;
+    }
+        
+    .hero__img_wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    
+    .hero__img_background { 
+        width: 150%;
+        left: -25%;
+        object-position: center;
+        top: 0;
+    }
+    
+        
+    /*----------------------------------------------------------*/
+    
+    .hero__title{
+        font-size: 3rem;
+        line-height: 0.85;
+    }
+        
+
+}

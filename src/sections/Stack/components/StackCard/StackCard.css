@@ -78,3 +78,30 @@
     color: #f0f6fc;
     letter-spacing: 0.5px;
 }
+
+/*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    .stack_card{
+        padding: 1.125rem;
+    }
+    
+    /*-----------------------------------------------------*/
+
+    .stack_card__header p{
+        font-size: 0.625rem;
+        letter-spacing: 0.625px;
+    }
+    
+    
+    .stack_card__header h3{
+        font-family: "Space Grotesk";
+        font-size: 1.125rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #f0f6fc;
+    }
+    
+
+}
