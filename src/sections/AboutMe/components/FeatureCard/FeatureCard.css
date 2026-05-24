@@ -2,6 +2,12 @@
     padding: 1.5rem;
     border-radius: 1.25rem;   
     color: #f0f6fc;
+    transition: 0.3s all;
+}
+
+.feature_card:hover{
+    background-color: #ffffff1a;
+    transform: translateY(-3px);
 }
 
 .feature_card .icon__container{

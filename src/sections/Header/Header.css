@@ -54,20 +54,16 @@ ul li a{
     line-height: 1.25rem;
     padding: 0.5rem 1rem;
     text-align: center;
+    transition: 0.3s all;
+    border-bottom: 1px solid transparent;
+}
+
+ul li:hover > a{
+    color: #fcf7f8;
+    border-bottom-color: #ffffff;
 }
 
 /*---------------------------------------------*/
-
-.header__contact__button{
-    box-shadow: 0 0 60px -10px oklch(62% .22 260 / .5);
-    color: #fcf7f8;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    border-radius: 0.75rem;
-    background-color: var(--main-color);
-    padding: 0.5rem 1rem;
-}
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 

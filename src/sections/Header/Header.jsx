@@ -1,6 +1,7 @@
 import "./Header.css"
 import { useEffect, useState } from "react"
 import { useWindowSize } from "../../shared/hooks/useWindowSize";
+import { Button } from "../../shared/components/Button/Button"
 
 export function Header(){
 
@@ -67,7 +68,12 @@ export function Header(){
                     <li onClick={handleNavClick}><a href="#contact">Contacto</a></li>
                 </ul>
 
-                <a href="#contact" className="header__contact__button">Hablemos</a>
+                <div className="header__contact__button">
+                    <Button 
+                        text={"Hablemos"}
+                        to={"#contact"}
+                        type={"regular"}/>
+                </div>
             </nav>
 
         </header>

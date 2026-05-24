@@ -1,6 +1,6 @@
 import "./Button.css"
 
-export function Button({text, icon, iconPosition = "right", useRowAnimation = false, type, to = "", onClick = () => {}}){
+export function Button({text, icon = "", iconPosition = "right", useRowAnimation = false, type, to = "", onClick = () => {}}){
 
     const classNameType = type 
         ? `button_component button_component--${type}` 
