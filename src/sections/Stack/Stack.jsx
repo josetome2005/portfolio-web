@@ -1,4 +1,5 @@
 import { StackCard } from "./components/StackCard/StackCard"
+import { motion } from "framer-motion"
 import "./Stack.css"
 
 const stacks = [
@@ -108,21 +109,44 @@ export function Stack(){
 
         <section className="stack" id="stack">
 
-            <p className="section__subtitle">02 — Stack tecnológico</p>
-            <h2 className="section__title">Herramientas con las que construyo.</h2>
-            <p className="section__text">
-                Tecnologías que utilizo a diario para crear productos modernos y robustos.
-            </p>
+            <motion.p 
+                className="section__subtitle"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: [0.79, 0.14, 0.15, 0.86], delay: 0.1 }}>
+                    02 — Stack tecnológico
+            </motion.p>
+
+            <motion.h2 
+                className="section__title"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: [0.79, 0.14, 0.15, 0.86], delay: 0.2 }}>
+                    Herramientas con las que construyo.
+            </motion.h2>
+
+            <motion.p 
+                className="section__text"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: [0.79, 0.14, 0.15, 0.86], delay: 0.3 }}>
+                    Tecnologías que utilizo a diario para crear productos modernos y robustos.
+            </motion.p>
 
             <div className="stack__container">
 
                 {
-                    stacks?.map(s => 
-                        <StackCard 
-                            key={s.id}
-                            name={s.name}
-                            description={s.description}
-                            items={s.items}/>
+                    stacks?.map((s, i) => 
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.75, ease: [0.68, -0.55, 0.27, 1.55], delay: (0.05*i + 0.2) }}>
+                                <StackCard 
+                                    key={s.id}
+                                    name={s.name}
+                                    description={s.description}
+                                    items={s.items}/>
+                        </motion.div>
                     )
                 }
 

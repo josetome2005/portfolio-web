@@ -3,6 +3,7 @@
     border-radius: 1.25rem;   
     color: #f0f6fc;
     transition: 0.3s all;
+    height: 100%;
 }
 
 .feature_card:hover{

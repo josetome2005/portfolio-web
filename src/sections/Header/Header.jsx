@@ -2,6 +2,7 @@ import "./Header.css"
 import { useEffect, useState } from "react"
 import { useWindowSize } from "../../shared/hooks/useWindowSize";
 import { Button } from "../../shared/components/Button/Button"
+import { motion } from "framer-motion";
 
 export function Header(){
 
@@ -40,7 +41,11 @@ export function Header(){
 
     return(
 
-        <header className={`${scrolled ? "header scrolled" : "header"} ${isOpen ? "open" : ""}  `}>
+        <motion.header 
+            className={`${scrolled ? "header scrolled" : "header"} ${isOpen ? "open" : ""}  `}
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: [0.68,-0.55,0.27,1.55], delay: 0.1 }}>
             <nav>
 
                 <div className="buttons__container">
@@ -76,7 +81,7 @@ export function Header(){
                 </div>
             </nav>
 
-        </header>
+        </motion.header>
     )
 
 }
