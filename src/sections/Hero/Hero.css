@@ -1,5 +1,5 @@
 .hero{
-    padding: 6rem 0 4rem 0;
+    padding: 8rem 0 4rem 0;
     position: relative;
     min-height: 100vh;
 }
@@ -178,7 +178,7 @@
     /*----------------------------------------------------------*/
     
     .hero__title{
-        font-size: 3rem;
+        font-size: 3.25rem;
         line-height: 0.85;
     }
         
