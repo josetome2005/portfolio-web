@@ -148,6 +148,10 @@
 
 @media (max-width: 768px) {
 
+    .hero{
+        padding: 9rem 0 1rem 0;
+    }
+    
     
     .background_hero__opacity{
         width: 100%;
