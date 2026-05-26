@@ -17,7 +17,7 @@ export function Header(){
         return () => window.removeEventListener("scroll", handler);
     }, [])
 
-    const isDesktop = width > 102;
+    const isDesktop = width > 1024;
 
     // Cierro el menu si se agranda la venta
     useEffect(() => {

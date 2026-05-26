@@ -144,10 +144,16 @@ ul li:hover > a{
         transform: translateY(-8px);
         transition: opacity 0.25s ease, transform 0.25s ease;
     }
-    
+
+       
     .nav__list.open li:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.05s; }
     .nav__list.open li:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
     .nav__list.open li:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
     .nav__list.open li:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
+
+    .nav__list li a {
+        width: 100%;
+        text-align: center;
+    }
     
 }
