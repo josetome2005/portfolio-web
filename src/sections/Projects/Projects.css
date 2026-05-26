@@ -9,16 +9,18 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 4rem;
+    align-items: stretch;
 }
 
 .projects__container > *{
     flex:  1 1 calc(50% - 1.5rem);
     width: calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
 }
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .projects{
         padding: 6rem var(--section-lateral-padding);
@@ -30,5 +32,7 @@
     
     .projects__container > *{
         width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }

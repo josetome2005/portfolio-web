@@ -75,7 +75,7 @@
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .contact{
         padding: 6rem var(--section-lateral-padding);

@@ -13,7 +13,7 @@ export function ProjectCard({name, description, technologies, img, link}){
 
             <div className="data__container">
                 <h3>{name}</h3>
-                <p>{description}</p>
+                <p dangerouslySetInnerHTML={{ __html: description }} />
                 <div className="technologies__container">
                     {
                         technologies?.map(t => 

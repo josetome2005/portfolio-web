@@ -42,7 +42,7 @@
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
    
     .feature_card h3{
         font-size: 1.125rem;

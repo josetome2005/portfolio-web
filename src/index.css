@@ -99,7 +99,7 @@ body{
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   :root{
     --section-lateral-padding: var(--m-section-lateral-padding);

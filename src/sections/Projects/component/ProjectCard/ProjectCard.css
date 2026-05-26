@@ -5,6 +5,7 @@
     overflow: hidden;
     position: relative;
     transition: 0.3s all;
+    height: 100%;
 }
 
 .project_card:hover{
@@ -17,7 +18,7 @@
 .project_card .img__container{
     background-color: #0d141f;
     overflow: hidden;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     position: relative;
 }
 
@@ -61,11 +62,16 @@
     letter-spacing: 0.5px;
 }
 
+.project_card .data__container p strong{
+    color: #dbdbdb;
+}
+
 .project_card .technologies__container{
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .project_card .technologies__container span{
@@ -122,7 +128,7 @@
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
    /*----------------------------------------*/
     

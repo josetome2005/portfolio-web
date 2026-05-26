@@ -20,7 +20,7 @@
 
 /*///////////////////////////////////////////////////// RESPONSIVE ////////////////////////////////////////*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .stack{
         padding: 6rem var(--section-lateral-padding);
